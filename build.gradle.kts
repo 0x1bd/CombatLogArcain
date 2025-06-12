@@ -19,7 +19,7 @@ repositories {
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.21.5-R0.1-SNAPSHOT")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation(kotlin("stdlib"))
 }
 
 tasks {
@@ -27,7 +27,12 @@ tasks {
         // Configure the Minecraft version for our task.
         // This is the only required configuration besides applying the plugin.
         // Your plugin's jar (or shadowJar if present) will be used automatically.
-        minecraftVersion("1.21")
+        minecraftVersion("1.21.4")
+    }
+
+    shadowJar {
+        archiveFileName.set("CombatLogArcain-${version}.jar")
+        minimize()
     }
 }
 

@@ -1,0 +1,4 @@
+combat-duration: 15  # Seconds
+messages:
+  action-bar: "<red>Combat: <yellow><time>s</yellow>"
+  combat-logged: "<red>{player} logged out during combat!"

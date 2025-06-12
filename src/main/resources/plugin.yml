@@ -1,4 +1,5 @@
 name: CombatLogArcain
 version: '1.0-SNAPSHOT'
 main: org.kvxd.combatLogArcain.CombatLogArcain
-api-version: '1.21'
+author: kvxd
+api-version: '1.21.4'
